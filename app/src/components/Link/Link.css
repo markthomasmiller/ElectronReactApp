@@ -1,0 +1,11 @@
+.component {
+	color: #fff;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	transition: border-bottom-color 100ms ease-in-out;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+
+.component:hover {
+	border-bottom-color: #fff;
+}

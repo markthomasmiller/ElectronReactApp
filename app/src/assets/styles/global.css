@@ -1,0 +1,48 @@
+/* Reset */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+		'Helvetica Neue', sans-serif;
+
+	color: #fff;
+	background: linear-gradient(220deg, red, blue);
+	background-size: 200% 200%;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-app-region: drag;
+}
+
+p {
+	margin: 1rem 0;
+}
+
+/* Grid */
+
+:global .grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+:global .column {
+	box-sizing: border-box;
+	flex: 1;
+}
+
+/* Utilities */
+
+:global .centered {
+	text-align: center;
+}
