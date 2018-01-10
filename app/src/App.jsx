@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React from 'react'
 import './assets/styles/global.css'
 import Link from './components/Link/Link.jsx'
 
