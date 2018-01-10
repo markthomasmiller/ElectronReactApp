@@ -31,6 +31,8 @@ Open another prompt and run:
 $ npm start
 ```
 
+Of course, make sure that both of these prompts are pointed to the project directory first.
+
 ## Credit
 
 Forked from [pastahito's electron-react-webpack](https://github.com/pastahito/electron-react-webpack) mostly for learning purposes.
