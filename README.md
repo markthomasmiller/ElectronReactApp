@@ -1,6 +1,6 @@
 # ElectronReactApp
 
-A simple starting point for an Electron + React + Webpack app. Supports locally-scoped CSS Modules by default (look in /src/components/Link for an example), hot reloading, and other nice features with a very small footprint to start.
+A simple starting point for an Electron + React + Webpack app. Supports locally-scoped CSS Modules by default (look in app/src/components/Link for an example), hot reloading, and other nice features with a very small footprint to start.
 
 ## How To install
 
