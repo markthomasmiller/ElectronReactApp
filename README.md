@@ -1,6 +1,6 @@
 # ElectronReactApp
 
-A boilerplate template for an Electron + React app. Supports locally-scoped CSS Modules by default (look in app/src/components/Link for an example) and hot reloading.
+A boilerplate template for an Electron + React app. Supports hot reloading and CSS Modules that are locally scoped by default ([example](https://github.com/zvphy/ElectronReactApp/tree/master/app/src/components/Link)).
 
 ## How to install
 
@@ -17,22 +17,22 @@ npm install
 
 ## How to run
 
-Open one prompt and run:
+Open two prompts and point each of them at the ElectronReactApp directory.
+
+In the first prompt, run:
 
 ```bash
 # This allows hot reloading
-$ npm run dev
+npm run dev
 ```
 
-Open another prompt and run:
+In the second prompt, run:
 
 ```bash
 # Starts the Electron app
-$ npm start
+npm start
 ```
 
-Of course, make sure that both of these prompts are pointed to the project directory first.
+## Other
 
-## Credit
-
-Forked from [pastahito's electron-react-webpack](https://github.com/pastahito/electron-react-webpack) mostly for learning purposes.
+Forked from [pastahito's electron-react-webpack](https://github.com/pastahito/electron-react-webpack). My biggest changes involved the implementation of component styling (my method keeps components coupled with their styles instead of using one large stylesheet), but I also plan to add additional features to simplify the process of updating menus, changing out the app icon, and so on.
