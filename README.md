@@ -22,7 +22,7 @@ Open two prompts and point each of them at the ElectronReactApp directory.
 In the first prompt, run:
 
 ```bash
-# This allows hot reloading
+# Generates files and allows hot reloading
 npm run dev
 ```
 
