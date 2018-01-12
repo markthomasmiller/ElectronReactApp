@@ -33,6 +33,21 @@ In the second prompt, run:
 npm start
 ```
 
+## How to build
+
+Change these commands in _package.json_.
+
+```bash
+# Build for Mac
+npm run build-mac
+
+# Build for Windows
+npm run build-win
+
+# Build for Linux
+npm run build-linux
+```
+
 ## Other
 
 Forked from [pastahito's electron-react-webpack](https://github.com/pastahito/electron-react-webpack). My biggest changes involved the implementation of component styling (my method keeps components coupled with their styles instead of using one large stylesheet), but I also plan to add additional features to simplify the process of updating menus, changing out the app icon, and so on.
