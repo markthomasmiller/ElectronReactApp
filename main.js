@@ -1,11 +1,10 @@
 const electron = require('electron')
 const path = require('path')
 const { app, BrowserWindow } = electron
+const isDev = require('electron-is-dev')
 
 // Let Electron reload itself when Webpack watches changes
-if (process.env.NODE_ENV === 'development') {
-	require('electron-reload')(__dirname)
-}
+isDev && require('electron-reload')(__dirname)
 
 // Allows app to avoid garbage collection
 let mainWindow
