@@ -17,43 +17,47 @@ npm install
 
 ## How to run
 
-If you're on a UNIX-based machine, just navigate into the project and run:
-
 ```bash
-npm run dev
+npm start
 ```
 
-If you're not using a UNIX-based machine, open two prompts and point each of them at the ElectronReactApp directory.
-
-In the first prompt, run:
-
-```bash
-# Generates files and allows hot reloading
-npm run start
-```
-
-In the second prompt, run:
-
-```bash
-# Starts the Electron app
-npm run open
-```
-
-Running two prompts won't be necessary in the near future.
+This will open Electron, generate files, and allow hot reloading.
 
 ## How to build
 
 Change these commands in _package.json_.
 
+_Build for Mac:_
 ```bash
-# Build for Mac
 npm run build-mac
+```
 
+_Build for Windows:_
+```bash
 # Build for Windows
 npm run build-win
+```
 
+_Build for Linux:_
+```bash
 # Build for Linux
 npm run build-linux
+```
+
+## Only Run Code in Dev/Prod
+
+If you want to enable features only during development, just require _electron-is-dev_ like I do in [main.js](https://github.com/zvphy/ElectronReactApp/blob/master/main.js):
+
+```javascript
+// Require electron-is-dev
+const isDev = require('electron-is-dev')
+
+// Ask `isDev`
+if (isDev) {
+  console.log("Development");
+} else {
+  console.log("Production");
+}
 ```
 
 ## Other
