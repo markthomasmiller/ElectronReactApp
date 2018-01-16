@@ -1,8 +1,15 @@
 # ElectronReactApp
 
-A boilerplate template for an Electron + React app. Supports hot reloading, allows locally-scoped CSS Modules ([example](https://github.com/zvphy/ElectronReactApp/tree/master/app/src/components/Link)), and includes many nice-to-haves like an application icon structure, menus, build commands, and so on.
+A lightweight boilerplate template for an Electron + React app. It supports all the basic functionality you'd expect from a desktop app, but you don't need to write the code to do it. (Just focus on writing your own application.) Out-of-the-box support for:
 
-## How to install
+- hot reloading (see your code changes without having to refresh)
+- locally-scoped CSS Modules ([example](https://github.com/zvphy/ElectronReactApp/tree/master/app/src/components/Link))
+- application icons (just switch out the images)
+- menus (plus, keyboard shortcuts work out-of-the-box)
+- extremely simple run and build commands
+- the option to run code _only_ in dev or prod
+
+## How to use
 
 ```bash
 # Clone the repo
@@ -25,28 +32,13 @@ This will open Electron, generate files, and allow hot reloading.
 
 ## How to build
 
-Change these commands in _package.json_.
+- Build for Mac: `npm run build-mac`
+- Build for Windows: `npm run build-win`
+- Build for Linux: `npm run build-linux`
 
-_Build for Mac:_
-```bash
-npm run build-mac
-```
+## Only run code in dev/prod
 
-_Build for Windows:_
-```bash
-# Build for Windows
-npm run build-win
-```
-
-_Build for Linux:_
-```bash
-# Build for Linux
-npm run build-linux
-```
-
-## Only Run Code in Dev/Prod
-
-If you want to enable features only during development, just require _electron-is-dev_ like I do in [main.js](https://github.com/zvphy/ElectronReactApp/blob/master/main.js):
+Sometimes it's helpful to _only_ run code in dev, or only in production. Just require _electron-is-dev_ and check against `isDev` like I do in [main.js](https://github.com/zvphy/ElectronReactApp/blob/master/main.js):
 
 ```javascript
 // Require electron-is-dev
