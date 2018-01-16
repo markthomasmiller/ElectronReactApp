@@ -52,7 +52,7 @@ if (isDev) {
 }
 ```
 
-## Other
+## Changes
 
 Forked from [pastahito's electron-react-webpack](https://github.com/pastahito/electron-react-webpack). My biggest changes involved: 
 
@@ -62,3 +62,7 @@ Forked from [pastahito's electron-react-webpack](https://github.com/pastahito/el
 * adding build commands for all platforms
 * adding scaffolding for in-app menus (which allows people to use keyboard shortcuts and access common app options by default)
 * adding support for window activation on Mac
+
+## Other
+
+MIT © [Mark Miller](https://zeph.co/about)
