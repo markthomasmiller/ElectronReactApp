@@ -15,7 +15,7 @@
 	},
 	"author": "Mark Thomas Miller",
 	"repository": "zvphy/ElectronReactApp",
-	"license": "WTFPL",
+	"license": "MIT",
 	"devDependencies": {
 		"babel-core": "^6.23.1",
 		"babel-loader": "^6.3.2",
