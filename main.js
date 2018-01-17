@@ -7,11 +7,11 @@ const isDev = require('electron-is-dev')
 isDev && require('electron-reload')(__dirname)
 
 // Allows app to avoid garbage collection
-let mainWindow
+global.mainWindow
 
 function createAppInstance () {
 	// Define window properties
-	mainWindow = new BrowserWindow({
+	global.mainWindow = new BrowserWindow({
 		width: 800,
 		height: 600,
 		title: "ElectronReactApp",
@@ -24,25 +24,26 @@ function createAppInstance () {
 	})
 	
 	// Load window contents
-	mainWindow.loadURL(`file://${__dirname}/app/index.html`)
+	global.mainWindow.loadURL(`file://${__dirname}/app/index.html`)
 	
 	// Create menu
 	require('./app/menu/menu.js')
 	
 	// Show window when ready
-	mainWindow.once('ready-to-show', () => {
-     mainWindow.show()
+	global.mainWindow.once('ready-to-show', () => {
+     global.mainWindow.show()
  	})
 	
 	// Dereference the window object on close
-	mainWindow.on('closed', function () {
-    mainWindow = null
+	global.mainWindow.on('closed', function () {
+    global.mainWindow = null
   })
+	
 }
 
 // Creates a new window when activated with no other windows open (Mac)
 app.on('activate', () => {
-  if (mainWindow === null) {
+  if (global.mainWindow === null) {
     createAppInstance()
   }
 })

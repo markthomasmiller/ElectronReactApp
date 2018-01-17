@@ -1,0 +1,10 @@
+.titlebar {
+  height: 40px;
+  /* Allows the app to be moved around by dragging the titlebar */
+  -webkit-app-region: drag;
+  /* Fixes the titlebar to the top of the screen */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
