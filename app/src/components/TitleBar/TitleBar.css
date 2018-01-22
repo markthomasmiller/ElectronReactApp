@@ -7,4 +7,6 @@
   top: 0;
   left: 0;
   right: 0;
+  /* Ensures titlebar is always on top of other elements */
+  z-index: 999999;
 }
