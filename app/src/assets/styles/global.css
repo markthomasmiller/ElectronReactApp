@@ -15,7 +15,7 @@ html {
 	background: linear-gradient(220deg, red, blue);
 	background-size: 200% 200%;
 }
-/* Stop deleting here :) */
+/* Stop deleting here */
 
 
 
@@ -36,6 +36,7 @@ html {
 }
 
 body {
+	/* Centers body contents in middle of window */
 	height: 100%;
 	display: flex;
 	align-items: center;
