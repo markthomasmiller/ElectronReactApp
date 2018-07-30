@@ -1,4 +1,4 @@
-![Electron React App](https://github.com/markthomasmiller/ElectronReactApp/tree/master/assets/images/electronreactapp.png)
+![Electron React App](https://raw.githubusercontent.com/markthomasmiller/ElectronReactApp/master/assets/images/electronreactapp.png)
 
 # ElectronReactApp
 
