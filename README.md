@@ -1,3 +1,5 @@
+![Electron React App](https://github.com/markthomasmiller/ElectronReactApp/tree/master/assets/images/electronreactapp.png)
+
 # ElectronReactApp
 
 A lightweight boilerplate template for an Electron + React app. It supports all the basic functionality you'd expect from a desktop app, but you don't need to write the code to do it. (Just focus on writing your own application.) Out-of-the-box support for:
@@ -29,6 +31,14 @@ npm start
 ```
 
 This will open Electron, generate files, and allow hot reloading.
+
+## Getting started
+
+ElectronReactApp uses a minimalistic folder structure that's easy to understand and extend. As the developer, you'll be spending most of your time inside the _/app/src_ directory, where you'll find the starting point for a simple React application.
+
+Custom icons can be added to the _/assets/icons/_ directory. (ElectronReactApp provides a simple placeholder for you – an unbranded, circular gradient.)
+
+Finally, you can define your default Electron configuration inside _./main.js_. From this file, you can control everything from the default width and height of the window to the background color. Window activation (an Apple-specific feature) is already handled for you.
 
 ## How to build
 
